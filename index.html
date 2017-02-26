@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Derek Generator</title>
+
+    <!-- Bootstrap -->
+    <!--<link href="./css/bootstrap.min.css" rel="stylesheet">-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!--<script src="./js/bootstrap.min.js"></script>-->
+    <script src="https://code.jquery.com/ui/jquery-ui-git.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDf-C_KGoZBvv9RXUqZBTvJOm0ebi4BEOY",
+            authDomain: "derekgenerator-4f282.firebaseapp.com",
+            databaseURL: "https://derekgenerator-4f282.firebaseio.com",
+            storageBucket: "derekgenerator-4f282.appspot.com",
+            messagingSenderId: "271081912592"
+        };
+        firebase.initializeApp(config);
+    </script>
+</head>
+<body>
+
+<p>Upload a picture to put derek on</p>
+<input type="file" id="input2" placeholder="Upload a pic of derek"><br>
+
+
+<p>Upload a picture of Derek's face</p>
+<input type="file" id="input" placeholder="Upload a pic of derek"><br>
+
+<button>Submit</button>
+<br>
+<br>
+<br>
+
+<script>
+    // Get a reference to the storage service, which is used to create references in your storage bucket
+    var storage = firebase.storage();
+    var database = firebase.database();
+
+    var dbRef = database.ref("images/");
+    // Create a storage reference from our storage service
+    var storageRef = storage.ref();
+
+    // Create a child reference
+
+    // imagesRef now points to 'images'
+
+    var iters = 0;
+
+//    console.log(selectedFile);
+    $("button").click(function () {
+
+        for(x = 0; x < 2; x++){
+            var selectedFile = $("input")[x].files[0];
+            console.log(x + " is x");
+            console.log(selectedFile.name);
+            var imagesRef = storageRef.child('images/' + selectedFile.name);
+            imagesRef.put(selectedFile).then(function(snapshot) {
+                dbRef.push({
+                    fileName: selectedFile.name,
+                    fileLink: snapshot.downloadURL
+                }).then(function () {
+                    console.log("pushed to db");
+                });
+                console.log(x + " is vcwefqf");
+                    iters++;
+                    $('body').append("<div class='resize div" + iters + "' style='width: 100px; height: 100px; z-index: " + iters +"'><img style='z-index: " + x +" width: 100%; height: 100%;' src='" + snapshot.downloadURL + "' class='image" + x +"'></div>");
+                console.log(x + " is fewwef");
+                $(".resize").draggable();
+                $(document).ready(function () {
+                    $(".resize").resizable();
+                });
+
+            });
+        }
+
+    });
+
+
+/*
+    dbRef.on('value', function (data) {
+        var imgData = data.val();
+        console.log(imgData);
+        var keys = Object.keys(imgData);
+        for(x = 0;  x < keys.length; x++){
+            var currentImg = imgData[keys[x]];
+            var imgLink = currentImg.fileLink;
+            var imgName = currentImg.fileName;
+            console.log(imgLink);
+            $("body").append("<img class='image" + x + "'>");
+            $(".image" + x).attr("src", imgLink);
+        }
+    });
+*/
+
+
+</script>
+<style>
+    body{
+        text-align: center;
+    }
+    .testImg{
+        width: 100%;
+        height: 100%;
+    }
+</style>
+</body>
+</html>
