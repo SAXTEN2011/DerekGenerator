@@ -91,6 +91,12 @@
                 $(".resize").draggable();
                 $(document).ready(function () {
                     $(".resize").resizable();
+                    $(".resize").click(function () {
+
+                        var zind = $(this).css("z-index");
+
+                        $(this).css("z-index", parseInt(zind)+1);
+                    });
                 });
 
             });
