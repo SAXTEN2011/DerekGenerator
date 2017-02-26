@@ -21,14 +21,24 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-432">
-              <caret line="60" column="40" lean-forward="true" selection-start-line="60" selection-start-column="40" selection-end-line="60" selection-end-column="40" />
+            <state relative-caret-position="680">
+              <caret line="40" column="37" lean-forward="false" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
               <folding>
-                <marker date="1488132453577" expanded="true" signature="3296:3334" ph="..." />
-                <marker date="1488132453577" expanded="true" signature="3296:3359" ph="..." />
-                <marker date="1488132453577" expanded="true" signature="3360:3369" ph="..." />
-                <marker date="1488132453577" expanded="true" signature="3360:3404" ph="..." />
+                <marker date="1488133153053" expanded="true" signature="3343:3381" ph="..." />
+                <marker date="1488133153053" expanded="true" signature="3343:3406" ph="..." />
+                <marker date="1488133153053" expanded="true" signature="3407:3416" ph="..." />
+                <marker date="1488133153053" expanded="true" signature="3407:3451" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="touchPunch.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/touchPunch.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="13" column="1090" lean-forward="false" selection-start-line="13" selection-start-column="1090" selection-end-line="13" selection-end-column="1090" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -39,6 +49,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -50,6 +61,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/js/touchPunch.js" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
@@ -104,7 +116,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -118,11 +130,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap.css" />
+              <option name="myItemId" value="bootstrap.js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NestingTreeNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -225,12 +237,12 @@
       <option name="presentableId" value="Default" />
       <updated>1487985368375</updated>
       <workItem from="1487985370821" duration="646000" />
-      <workItem from="1488125199928" duration="6647000" />
+      <workItem from="1488125199928" duration="6987000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7293000" />
+    <option name="totallyTimeSpent" value="7633000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -270,10 +282,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1488132453577" expanded="true" signature="3296:3334" ph="..." />
-            <marker date="1488132453577" expanded="true" signature="3296:3359" ph="..." />
-            <marker date="1488132453577" expanded="true" signature="3360:3369" ph="..." />
-            <marker date="1488132453577" expanded="true" signature="3360:3404" ph="..." />
+            <marker date="1488133153053" expanded="true" signature="3343:3381" ph="..." />
+            <marker date="1488133153053" expanded="true" signature="3343:3406" ph="..." />
+            <marker date="1488133153053" expanded="true" signature="3407:3416" ph="..." />
+            <marker date="1488133153053" expanded="true" signature="3407:3451" ph="..." />
           </folding>
         </state>
       </provider>
@@ -283,15 +295,23 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/touchPunch.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="1090" lean-forward="false" selection-start-line="13" selection-start-column="1090" selection-end-line="13" selection-end-column="1090" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-432">
-          <caret line="60" column="40" lean-forward="true" selection-start-line="60" selection-start-column="40" selection-end-line="60" selection-end-column="40" />
+        <state relative-caret-position="680">
+          <caret line="40" column="37" lean-forward="false" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
           <folding>
-            <marker date="1488132453577" expanded="true" signature="3296:3334" ph="..." />
-            <marker date="1488132453577" expanded="true" signature="3296:3359" ph="..." />
-            <marker date="1488132453577" expanded="true" signature="3360:3369" ph="..." />
-            <marker date="1488132453577" expanded="true" signature="3360:3404" ph="..." />
+            <marker date="1488133153053" expanded="true" signature="3343:3381" ph="..." />
+            <marker date="1488133153053" expanded="true" signature="3343:3406" ph="..." />
+            <marker date="1488133153053" expanded="true" signature="3407:3416" ph="..." />
+            <marker date="1488133153053" expanded="true" signature="3407:3451" ph="..." />
           </folding>
         </state>
       </provider>
